@@ -1,11 +1,16 @@
 import sqlite3
+from itertools import *
 
-def data_base_writer(id_telegram,reg_info,username):
-    connection = sqlite3.connect(r'Bot_Assist/Head/DataBase.db')
-    cursor = connection.cursor()
 
+# ДОБАВЛЯЕТ В БД ПОЛЬЗОВАТЕЛЯ
+def db_users_add(id_telegram,reg_info,username):
     second_name, first_name, patronymic = reg_info.split()
 
+    path = r'Bot_Assist/Head/Data_Base/users_base.db'
+
+    connection = sqlite3.connect(path)
+    cursor = connection.cursor()
+
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS Users (
         id INTEGER PRIMARY KEY,
@@ -21,15 +26,69 @@ def data_base_writer(id_telegram,reg_info,username):
     users = cursor.fetchall()
 
     for user in users:
-        if user[1]==id_telegram:
-             return 0
-    cursor.execute('INSERT INTO Users(id_telegram,second_name,first_name,patronymic,username) VALUES (?,?,?,?,?)',
-                   (f'{id_telegram}',f'{second_name}',f'{first_name}',f'{patronymic}',f'{username}'))
+        if user[1] == id_telegram:
+            return 0
+
+    cursor.execute('''INSERT INTO Users(id_telegram,second_name,first_name,patronymic,username) VALUES(?,?,?,?,?)''',(f'{id_telegram}',f'{second_name}',f'{first_name}',f'{patronymic}',f'{username}'))
     connection.commit()
+    connection.close()
+
+    db_users_table_add(id_telegram)
+
     return 1
 
-def data_base_reader_con1(id_telegram):
-    connection = sqlite3.connect(r'Bot_Assist/Head/DataBase.db')
+# СОЗДАЕТ ДЛЯ ПОЛЬЗОВАТЕЛЯ БД ЗАДАНИЙ
+def db_users_table_add(id_user):
+    path = fr'Bot_Assist/Head/Data_Base/user_db/{id_user}.db'
+
+    connection = sqlite3.connect(path)
+    cursor = connection.cursor()
+
+    cursor.execute('''
+           CREATE TABLE IF NOT EXISTS tasks (
+           id INTEGER PRIMARY KEY,
+           name STRING TEXT NOT NULL,
+           description TEXT NOT NULL,
+           date TEXT NOT NULL,
+           id_user INTEGER
+           )
+       ''')
+
+    connection.commit()
+    connection.close()
+
+# ДОБАВЛЯЕТ ЗАДАНИЕ ПОЛЬЗОВАТЕЛЮ
+def db_user_task_add(task):
+    name,description,date,id_users = task
+
+    for id_user in id_users:
+        path = fr'Bot_Assist/Head/Data_Base/user_db/{id_user}.db'
+
+        connection = sqlite3.connect(path)
+        cursor = connection.cursor()
+
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS tasks (
+            id INTEGER PRIMARY KEY,
+            name STRING TEXT NOT NULL,
+            description TEXT NOT NULL,
+            date TEXT NOT NULL,
+            id_user INTEGER
+            )
+        ''')
+        try:
+            cursor.execute('''INSERT INTO tasks(name,description,date,id_user) VALUES(?,?,?,?)''',(f'{name}',f'{description}',f'{date}',f'{id_user}'))
+            connection.commit()
+            connection.close()
+            return 1
+        except:
+            return 0
+
+# ВЫВОДИТ ВСЕХ ПОЛЬЗОВАТЕЛЕЙ
+def db_users_check(info: str = 'name'):
+    path = r'Bot_Assist/Head/Data_Base/users_base.db'
+
+    connection = sqlite3.connect(path)
     cursor = connection.cursor()
 
     cursor.execute('''
@@ -46,13 +105,46 @@ def data_base_reader_con1(id_telegram):
     cursor.execute('SELECT * FROM Users')
     users = cursor.fetchall()
 
-    for user in users:
-        if user[1]==id_telegram:
-            return user[1]
-    return 0
+    user_info = []
 
-def data_base_reader_con2(di):
-    connection = sqlite3.connect(r'Bot_Assist/Head/DataBase.db')
+    if info == 'name':
+        for user in users:
+            user_info.append(user[2:4])
+        return user_info
+    elif info == 'id':
+        for user in users:
+            user_info.append(user[1])
+        return user_info
+    elif info == 'num_name':
+        for user in users:
+            user_info.append([user[0],user[2],user[3]])
+        return user_info
+
+# ВЫВОДИТ ВСЕ ЗАДАНИЯ ПОЛЬЗОВАТЕЛЯ
+def db_user_task_check(id_user):
+    path = fr'Bot_Assist/Head/Data_Base/user_db/{id_user}.db'
+
+    connection = sqlite3.connect(path)
+    cursor = connection.cursor()
+
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS tasks (
+        id INTEGER PRIMARY KEY,
+        name STRING TEXT NOT NULL,
+        description TEXT NOT NULL,
+        date TEXT NOT NULL,
+        id_user INTEGER
+        )
+    ''')
+
+    cursor.execute('SELECT * FROM tasks')
+    tasks = cursor.fetchall()
+    return tasks
+
+def db_user_num_to_id(num_performer: str = '-1',id:bool = 0):
+    path = r'Bot_Assist/Head/Data_Base/users_base.db'
+
+    connection = sqlite3.connect(path)
     cursor = connection.cursor()
 
     cursor.execute('''
@@ -66,39 +158,32 @@ def data_base_reader_con2(di):
         )
     ''')
 
-    cursor.execute('SELECT first_name,second_name FROM Users')
+    cursor.execute('SELECT * FROM Users')
     users = cursor.fetchall()
-    return users
 
-
-names = [
-    "Иванов Иван Иванович",
-    "Петрова Анна Сергеевна",
-    "Сидоров Дмитрий Олегович",
-    "Кузнецова Екатерина Владимировна",
-    "Смирнов Алексей Петрович",
-    "Попова Ольга Николаевна",
-    "Лебедев Михаил Александрович",
-    "Козлова Мария Дмитриевна",
-    "Новиков Сергей Игоревич",
-    "Морозова Анастасия Андреевна",
-    "Волков Андрей Викторович",
-    "Соловьева Юлия Павловна",
-    "Васильев Павел Евгеньевич",
-    "Зайцева Елена Станиславовна",
-    "Павлов Артем Константинович",
-    "Семенова Ирина Васильевна",
-    "Голубев Денис Юрьевич",
-    "Виноградова Татьяна Олеговна",
-    "Богданов Роман Артемович",
-    "Воробьева Надежда Федоровна",
-    "Федоров Григорий Степанович",
-    "Михайлова Людмила Геннадьевна",
-    "Беляев Виталий Романович",
-    "Титова Ксения Валерьевна",
-    "Комаров Станислав Борисович"
-]
-#id_telegram = 1
-# for reg_info in names:
-#     username = '4'
-#print( data_base_reader(id_telegram))
+    if id == 0:
+        if num_performer.count('/')==0:
+            for user in users:
+                if user[0] == int(num_performer):
+                    return [user[2:4]]
+        else:
+            name_performers = []
+            num_performers = num_performer.split('/')
+            for num in num_performers:
+                for user in users:
+                    if user[0] == int(num):
+                        name_performers.append(user[2:4])
+            return name_performers
+    if id == 1:
+        if num_performer.count('/')==0:
+            for user in users:
+                if user[0] == int(num_performer):
+                    return [user[1]]
+        else:
+            id_performers = []
+            num_performers = num_performer.split('/')
+            for num in num_performers:
+                for user in users:
+                    if user[0] == int(num):
+                        id_performers.append(user[1])
+            return id_performers
