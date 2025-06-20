@@ -4,19 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4daedc1c-53fe-44cc-a9f0-a7c4f5c2209d" name="Changes" comment="0.0.2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bot_Assist/Body/Moduls/function.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bot_Assist/Body/Moduls/function.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bot_Assist/Body/Moduls/keyboards.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bot_Assist/Body/Moduls/keyboards.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bot_Assist/Body/Moduls/md_main_menu/main_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bot_Assist/Body/Moduls/md_main_menu/main_menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bot_Assist/Body/Moduls/md_super_main_menu/super_main_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bot_Assist/Body/Moduls/md_super_main_menu/super_main_menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bot_Assist/Body/Moduls/registration.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bot_Assist/Body/Moduls/registration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bot_Assist/Body/Moduls/simple_handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bot_Assist/Body/Moduls/simple_handlers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bot_Assist/Head/Core.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bot_Assist/Head/Core.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bot_Assist/Head/Data_Base/user_db/5132538999.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bot_Assist/Head/Data_Base/users_base.db" beforeDir="false" />
+    <list default="true" id="4daedc1c-53fe-44cc-a9f0-a7c4f5c2209d" name="Changes" comment="0.0.3">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Bot_Assist/Head/bot_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bot_Assist/Head/bot_loader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bot_Assist/Head/db_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bot_Assist/Head/db_manager.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bot_Assist/TOKEN.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bot_Assist/TOKEN.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -281,7 +271,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750219001492</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="0.0.3">
+      <option name="closed" value="true" />
+      <created>1750448029706</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1750448029706</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -302,6 +300,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="0.0.1" />
     <MESSAGE value="0.0.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.0.2" />
+    <MESSAGE value="0.0.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.0.3" />
   </component>
 </project>
