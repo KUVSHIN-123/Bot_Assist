@@ -8,9 +8,6 @@ from Bot_Assist.Body.Moduls.registration import registration_rt
 import asyncio
 import logging
 
-
-
-
 dp.include_router(simple_handler_rt)
 dp.include_router(super_main_menu_rt)
 dp.include_router(main_menu_rt)
