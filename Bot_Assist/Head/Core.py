@@ -1,6 +1,6 @@
 
-from bot_loader import *
-from Body.Moduls.simple_handlers import simple_handler_rt
+import bot_loader
+from Bot_Assist.Body.Moduls import simple_handlers
 from Body.Moduls.md_super_main_menu.super_main_menu import super_main_menu_rt
 from Body.Moduls.md_main_menu.main_menu import main_menu_rt
 from Body.Moduls.registration import registration_rt
