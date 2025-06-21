@@ -1,7 +1,7 @@
 import sqlite3
 
-path_users_db = r'Bot_Assist/Head/Data_Base/users_base.db'
-path_tasks_db = 'Bot_Assist/Head/Data_Base/user_db/'
+path_users_db = r'/home/main_server/Bot_Assist/Bot_Assist/Head/Data_Base/users_base.db'
+path_tasks_db = r'/home/main_server/Bot_Assist/Bot_Assist/Head/Data_Base/user_db/'
 
 db_users = ''' 
         CREATE TABLE IF NOT EXISTS Users (
