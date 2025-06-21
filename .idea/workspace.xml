@@ -32,12 +32,12 @@
     &quot;assignee&quot;: &quot;KUVSHIN-123&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/KUVSHIN-123/Bot_Assist.git",
-    "accountId": "0a98bccb-0b31-4c04-9ac0-fb93aae8bd59"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/KUVSHIN-123/Bot_Assist.git&quot;,
+    &quot;accountId&quot;: &quot;0a98bccb-0b31-4c04-9ac0-fb93aae8bd59&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -49,25 +49,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Core.executor": "Run",
-    "Python.Handlers.executor": "Run",
-    "Python.KeyBoards.executor": "Run",
-    "Python.core.executor": "Run",
-    "Python.data_base.executor": "Run",
-    "Python.data_writer.executor": "Run",
-    "Python.db_manager (1).executor": "Run",
-    "Python.function.executor": "Run",
-    "Python.keyboards.executor": "Run",
-    "Python.simple_handlers.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/kuvshin/PycharmProjects/Bot_Assist/Bot_Assist",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.User-Defined File Types"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Core.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Handlers.executor&quot;: &quot;Run&quot;,
+    &quot;Python.KeyBoards.executor&quot;: &quot;Run&quot;,
+    &quot;Python.core.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_base.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_writer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.db_manager (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.function.executor&quot;: &quot;Run&quot;,
+    &quot;Python.keyboards.executor&quot;: &quot;Run&quot;,
+    &quot;Python.simple_handlers.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/kuvshin/PycharmProjects/Bot_Assist/Bot_Assist&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.User-Defined File Types&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Bot_Assist" />
