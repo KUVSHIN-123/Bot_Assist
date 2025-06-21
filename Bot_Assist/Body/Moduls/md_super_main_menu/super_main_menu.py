@@ -3,11 +3,11 @@ from aiogram.types import Message, CallbackQuery
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.fsm.context import FSMContext
 from aiogram.filters import Command
-import Bot_Assist.Body.Moduls.keyboards as kb
-from Bot_Assist.Head.db_manager import *
-from Bot_Assist.Body.Moduls.function import *
-from Bot_Assist.TOKEN import id_super_user
-from Bot_Assist.Body.Moduls.keyboards import *
+import Body.Moduls.keyboards as kb
+from Head.db_manager import *
+from Body.Moduls.function import *
+from TOKEN import id_super_user
+from Body.Moduls.keyboards import *
 
 super_main_menu_rt = Router()
 

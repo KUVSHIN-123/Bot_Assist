@@ -1,4 +1,4 @@
-from Bot_Assist.Head.bot_loader import *
+from Head.bot_loader import *
 from datetime import datetime
 
 # ФУНКЦИЯ ОТПРАВЛЯЕТ СООБЩЕНИЕ ПОЛЬЗОВАТЕЛЯМ

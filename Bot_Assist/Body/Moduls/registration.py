@@ -3,9 +3,9 @@ from aiogram.types import Message,CallbackQuery
 from aiogram.fsm.state import State,StatesGroup
 from aiogram.fsm.context import FSMContext
 from aiogram.filters import Command
-from Bot_Assist.Body.Moduls import keyboards as kb
-from Bot_Assist.Head.db_manager import *
-from Bot_Assist.TOKEN import id_super_user
+from Body.Moduls import keyboards as kb
+from Head.db_manager import *
+from TOKEN import id_super_user
 
 registration_rt = Router()
 

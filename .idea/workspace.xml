@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4daedc1c-53fe-44cc-a9f0-a7c4f5c2209d" name="Changes" comment="0.0.3">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bot_Assist/Head/bot_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bot_Assist/Head/bot_loader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bot_Assist/TOKEN.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bot_Assist/TOKEN.py" afterDir="false" />
-    </list>
+    <list default="true" id="4daedc1c-53fe-44cc-a9f0-a7c4f5c2209d" name="Changes" comment="0.0.4" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,42 +32,50 @@
     &quot;assignee&quot;: &quot;KUVSHIN-123&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/KUVSHIN-123/Bot_Assist.git&quot;,
-    &quot;accountId&quot;: &quot;93b3f29d-9cf0-40fc-b77b-43177238e03a&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/KUVSHIN-123/Bot_Assist.git",
+    "accountId": "0a98bccb-0b31-4c04-9ac0-fb93aae8bd59"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2yPw1uXl7Ap6uhsMnLboP1xgLk8" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.Core.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Handlers.executor&quot;: &quot;Run&quot;,
-    &quot;Python.KeyBoards.executor&quot;: &quot;Run&quot;,
-    &quot;Python.core.executor&quot;: &quot;Run&quot;,
-    &quot;Python.data_base.executor&quot;: &quot;Run&quot;,
-    &quot;Python.data_writer.executor&quot;: &quot;Run&quot;,
-    &quot;Python.db_manager (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.function.executor&quot;: &quot;Run&quot;,
-    &quot;Python.keyboards.executor&quot;: &quot;Run&quot;,
-    &quot;Python.simple_handlers.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Pycharm/KABANI/Bot_Assist/Core.py&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.User-Defined File Types&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.Core.executor": "Run",
+    "Python.Handlers.executor": "Run",
+    "Python.KeyBoards.executor": "Run",
+    "Python.core.executor": "Run",
+    "Python.data_base.executor": "Run",
+    "Python.data_writer.executor": "Run",
+    "Python.db_manager (1).executor": "Run",
+    "Python.function.executor": "Run",
+    "Python.keyboards.executor": "Run",
+    "Python.simple_handlers.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/kuvshin/PycharmProjects/Bot_Assist/Bot_Assist",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.User-Defined File Types"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Bot_Assist" />
+      <recent name="$PROJECT_DIR$/Bot_Assist/Head/Data_Base/user_db" />
+      <recent name="$PROJECT_DIR$/Bot_Assist/Head/Data_Base" />
+      <recent name="$PROJECT_DIR$/Bot_Assist/Head" />
+      <recent name="$PROJECT_DIR$/Bot_Assist/Body/Moduls" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Pycharm\KABANI" />
       <recent name="D:\Pycharm\KABANI\Bot_Assist\Body" />
@@ -234,7 +238,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-5b207ade9991-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.17890.14" />
+        <option value="bundled-python-sdk-53e2683a6804-9cdd278e9d02-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.26094.141" />
       </set>
     </attachedChunks>
   </component>
@@ -279,7 +283,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750448029706</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="0.0.4">
+      <option name="closed" value="true" />
+      <created>1750529528606</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1750529528606</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -301,6 +313,7 @@
     <MESSAGE value="0.0.1" />
     <MESSAGE value="0.0.2" />
     <MESSAGE value="0.0.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.0.3" />
+    <MESSAGE value="0.0.4" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.0.4" />
   </component>
 </project>
