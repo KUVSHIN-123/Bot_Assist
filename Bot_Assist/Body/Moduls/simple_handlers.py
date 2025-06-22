@@ -1,8 +1,6 @@
 from aiogram import Router
 from aiogram.types import Message
 from aiogram.filters import Command
-from Bot_Assist.Head import db_manager
-from Bot_Assist import TOKEN
 
 simple_handler_rt = Router()
 
